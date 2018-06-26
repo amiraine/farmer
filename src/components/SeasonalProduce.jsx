@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Produce from './Produce'
 const availableProduce = [
   {
     month: 'January',
@@ -269,4 +269,29 @@ const availableProduce = [
   }
 ]
 
-export default availableProduce
+function MasterProduce(){
+  const addMargin = {
+    margin: '20px 5vw 0px 5vw',
+  }
+  const gridStyle = {
+    display: 'grid',
+    gridTemplateColumns:'repeat(6,1fr)',
+    gridGap: '10px'
+  }
+  return(
+    <div style={addMargin}>
+      <h1>Available Produce</h1>
+      <div style={gridStyle}>
+        {availableProduce.map((produce, index) =>
+          <Produce month = {produce.month}
+            key = {index}
+            selection = {produce.selection.map((selection) =>
+              <li>{selection}</li>
+            )}
+            key = {index} />
+        )}
+      </div>
+    </div>
+  )
+}
+export default MasterProduce
