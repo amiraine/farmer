@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Market(props){
   const gridItem = {
-    fontFamily: 'sans-serif',
+    borderLeft: '2px solid rgb(215, 239, 170)'
   }
   const titleStyle = {
     backgroundColor: '#639900',
@@ -12,7 +12,7 @@ function Market(props){
     textAlign: 'center'
   }
   const bodyStyle = {
-    backgroundColor: '#d7efaa',
+    backgroundColor: 'rgba(215, 239, 170,.8)',
     height: '170px',
     padding: '10px'
   }

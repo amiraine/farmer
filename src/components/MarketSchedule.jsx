@@ -45,10 +45,12 @@ function MasterMarket(){
     height: '400px'
   }
   const scheduleGrid = {
+    height: '230px',
+    background: 'url(http://www.besthealthmag.ca/wp-content/uploads/2016/05/01_farmers_market.jpg)',
+    backgroundPosition: 'center',
     display: 'grid',
     gridTemplateColumns: 'repeat(6,1fr)',
     gridAutoRows: '170px',
-    gridGap: '5px',
     marginLeft: '5vw',
     marginRight: '5vw'
   }
@@ -60,7 +62,7 @@ function MasterMarket(){
   }
   return(
     <div style={fix}>
-      <h1 style={header}><a name='#market'>Market Schedule</a></h1>
+      <h1 style={header}><a name='market'>Market Schedule</a></h1>
       <div style={scheduleGrid}>
         {marketSchedule.map((market, index) =>
           <Market day = {market.day}
