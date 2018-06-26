@@ -1,6 +1,6 @@
-import React from 'react';
-import Logo from './Logo';
-import Links from './Links';
+import React from 'react'
+import Logo from './Logo'
+import Links from './Links'
 
 function Header(){
   const headerStyle = {
@@ -18,7 +18,7 @@ function Header(){
       <Logo/>
       <Links/>
     </div>
-  );
+  )
 }
 
 export default Header

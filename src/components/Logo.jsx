@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import LogoTitle from './LogoTitle'
 function Logo(){
   const logoScale = {
@@ -17,7 +17,7 @@ function Logo(){
       <img style={logoScale} src ="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Emojione_1F33D.svg/512px-Emojione_1F33D.svg.png" />
       <LogoTitle/>
     </div>
-  );
+  )
 }
 
 export default Logo

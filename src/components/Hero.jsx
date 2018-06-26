@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function HeroBanner(){
   const heroStyles = {
@@ -29,7 +29,7 @@ function HeroBanner(){
       <h1>Fresh, Local, Sustainable</h1>
       <button style ={buttonStyle}>Our Mission</button>
     </div>
-  );
+  )
 }
 
-export default HeroBanner;
+export default HeroBanner

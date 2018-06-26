@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function LogoTitle(){
   const textStyle = {
@@ -11,7 +11,7 @@ function LogoTitle(){
       <h1 style={textStyle}>EPICROPUS FARMS</h1>
       <h2 style={textStyle}>Growing above and beyond</h2>
     </div>
-  );
+  )
 }
 
 export default LogoTitle
