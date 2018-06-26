@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Header from './Header';
+import HeroBanner from './Hero';
+// function
 
 function App(){
   return(
-    <div>"hello world"
+    <div>
+      <Header/>
+      <HeroBanner/>
     </div>
   );
 }
